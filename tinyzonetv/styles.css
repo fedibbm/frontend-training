@@ -1,0 +1,11 @@
+.text-and-img {
+    display: inline-flex;
+    max-height: 1rem;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background-image: url('./assets/svg/magnifying-glass-solid.svg');
+    height: 100px;
+    width: 100px;
+}
