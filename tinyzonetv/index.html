@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tinyzonetv</title>
-    <link rel="stylesheet" href="general_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="general_styles.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
+    <!-- <header>
         <nav>
-            <div class="container nav">
-                <img src="assets/img/logo.png" alt="logo" class="logo">
-                <div class="searchbar">
+            <div class="nav">
+                <div class="flex">
+                    <div class="side-menu-button"> <img src="./assets/svg/bars-solid.svg" alt=""></div>
+                    <img src="assets/img/logo.png" alt="logo" class="logo self-center">
+                </div>
+                <div class="searchbar self-center">
                     <input type="text" class="search-field">
-                    <button class="search-btn" ></button>
+                    <div class="search-btn"></div>
                 </div>
 
-                <p class="text-and-img"><img src="./assets/svg/user-solid.svg">Login<p>
+                <p class="text-and-img self-center"><img src="./assets/svg/user-solid.svg">Login<p>
             </div>
 
         </nav>
+    </header> -->
+
+    <header>
+        <div class="nav">
+            <div class="side-menu-button"> <img src="./assets/svg/bars-solid.svg" alt=""></div>
+            <img src="assets/img/logo.png" alt="logo" class="logo self-center">
+        </div>
+        <div class="searchbar self-center flex">
+            <input type="text" class="search-field" placeholder="Enter keywords...">
+            <a class="search-btn-parent"><img src="assets/svg/magnifying-glass-solid.svg" class="search-btn" alt=""></a>
+        </div>
+            <div class="login-div">
+            <i class="fa-solid fa-user"></i>
+            <p class="login-text">Login</p>
+        </div>
     </header>
-    
 </body>
+
 </html>

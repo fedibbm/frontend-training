@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html,
 body {
     height: 100%;
@@ -27,7 +30,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .container {
@@ -58,6 +61,14 @@ ul {
     overflow: hidden;
 }
 
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
 .flex {
     display: flex;
 }
@@ -78,6 +89,9 @@ ul {
 
 .fleft{
     justify-content: flex-start;
+}
+.self-center{
+    align-self: center;
 }
 .wrapper {
     flex-wrap: wrap;

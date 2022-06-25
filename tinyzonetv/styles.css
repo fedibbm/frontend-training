@@ -1,11 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+    /* background-color:rgb(31,31,31) */
+    background:hsl(0deg 0% 12%);
+}
+img.logo{
+    height:40px;
+    width:40px;
+}
+
+i{
+    margin:auto 0;
+}
+/* .nav{
+    background-color:rgb(40,40,40);
+    max-height:max(6vh,40px);
+}
 .text-and-img {
     display: inline-flex;
     max-height: 1rem;
     font-size: 1rem;
+    margin-right:auto;
 }
 
-.search-btn {
+.searchbar{
+    display:inline-flex;
+}
+.searchbar .search-btn{
     background-image: url('./assets/svg/magnifying-glass-solid.svg');
-    height: 100px;
-    width: 100px;
+    height: 35px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-size:30% 30%;
+    border:none;
+}
+
+.searchbar .search-field{
+    height:35px;
+    min-width:500px;
+}
+
+.side-menu-button{
+    padding : 10px;
+    margin:7px 10px;
+    cursor:pointer;
+
+}
+
+
+.side-menu-button img{
+    height:25px;
+    width:25px;
+    filter: invert(99%) sepia(5%) saturate(17%) hue-rotate(133deg) brightness(105%) contrast(100%);
+
+} */
+
+
+.nav{
+    position:relative;
+    background-color: hsl(0,0%,16%);
+    /* background-color: red; */
+    height:60px;
+}
+
+.side-menu-button{
+    position:absolute;
+    height:25px;
+    width:25px;
+    top:18px;
+    left:20px;
+}
+.side-menu-button img{
+    height:25px;
+    width:25px;
+    filter: invert(99%) sepia(5%) saturate(17%) hue-rotate(133deg) brightness(105%) contrast(100%);
+
+}
+img.logo{
+    height:40px;
+    width:40px;
+    position:absolute;
+    left:60px;
+    top:10px;
+}
+
+.searchbar{
+    display: flex;
+    position:absolute;
+    left:350px;
+    top:13px;
+}
+
+
+.searchbar .search-field{
+    height:35px;
+    min-width:500px;
+    
+    background-color: hsl(0,0%,7%);
+    /* border:1px solid hsl(0,0%,16%); */
+    padding:15px;
+    border:none;
+    color:white;
+    border-right:none;
+}
+
+
+img.search-btn{
+    height:25px;
+    width:40px;
+    filter: invert(99%) sepia(5%) saturate(17%) hue-rotate(133deg) brightness(105%) contrast(100%);
+    align-self: center;
+    /* margin-left:20px; */
+}
+
+.search-btn-parent{
+    padding:0 0.5rem;
+    display: flex;
+    height:35px;
+    width:80px;
+    background: hsl(0,0%,16%);
+    border:1px solid hsl(0,0%,16%);
+    border-left:none;
+    text-align: center;
+}
+.login-div{
+    display:flex;
+    position: absolute;
+    right:0;
+    color:white;
+}
+.login-text{
+    margin-left: 10px;
 }
