@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 html,body{
     margin:0;
@@ -12,6 +14,17 @@ body{
 img.logo{
     height:40px;
     width:40px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+header{
+    position: sticky;
+    top:0;
 }
 
 i{
@@ -60,6 +73,11 @@ i{
 
 } */
 
+#app{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .nav{
     position:relative;
@@ -74,6 +92,7 @@ i{
     width:25px;
     top:18px;
     left:20px;
+    cursor:pointer;
 }
 .side-menu-button img{
     height:25px;
@@ -115,7 +134,7 @@ img.search-btn{
     width:40px;
     filter: invert(99%) sepia(5%) saturate(17%) hue-rotate(133deg) brightness(105%) contrast(100%);
     align-self: center;
-    /* margin-left:20px; */
+    margin-left:11px;
 }
 
 .search-btn-parent{
@@ -123,17 +142,54 @@ img.search-btn{
     display: flex;
     height:35px;
     width:80px;
-    background: hsl(0,0%,16%);
-    border:1px solid hsl(0,0%,16%);
+    background: hsl(0,0%,20%);
+    border:1px solid hsl(0,0%,20%);
     border-left:none;
     text-align: center;
 }
 .login-div{
     display:flex;
     position: absolute;
-    right:0;
-    color:white;
+    right:15px;
+    height:40px;
+    top:10px;
+    color:hsl(0, 0%, 75%);
 }
 .login-text{
-    margin-left: 10px;
+    margin : auto 10px;
+}
+.side-menu ul li a {
+    color:hsl(0, 0%, 75%);
+}
+
+.side-menu{
+    background: hsl(0,0%,16%);
+    width:250px;
+}
+
+.body{
+    background:green;
+    flex-grow:10;
+}
+.hidden {
+    display:none;
+}
+
+.side-menu .pages{
+    padding:0;
+}
+
+.side-menu .pages li a {
+    display:block;
+    padding:10px;
+    padding-left:20px;
+}
+
+.side-menu .pages li a:hover {
+    opacity: 0.8;
+    background-color: hsl(0,0%,18%);
+}
+
+.side-menu .pages li a i{
+    padding-right:15px;
 }

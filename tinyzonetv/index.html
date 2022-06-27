@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tinyzonetv</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="general_styles.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,20 +32,57 @@
         </nav>
     </header> -->
 
-    <header>
+    <header >
         <div class="nav">
-            <div class="side-menu-button"> <img src="./assets/svg/bars-solid.svg" alt=""></div>
+            <div class="side-menu-button" onclick="toggler()"> <img src="./assets/svg/bars-solid.svg" alt=""></div>
             <img src="assets/img/logo.png" alt="logo" class="logo self-center">
-        </div>
-        <div class="searchbar self-center flex">
-            <input type="text" class="search-field" placeholder="Enter keywords...">
-            <a class="search-btn-parent"><img src="assets/svg/magnifying-glass-solid.svg" class="search-btn" alt=""></a>
-        </div>
+            <div class="searchbar self-center flex">
+                <input type="text" class="search-field" placeholder="Enter keywords...">
+                <a class="search-btn-parent"><img src="assets/svg/magnifying-glass-solid.svg" class="search-btn"
+                        alt=""></a>
+            </div>
             <div class="login-div">
-            <i class="fa-solid fa-user"></i>
-            <p class="login-text">Login</p>
+                <i class="fa-solid fa-user"></i>
+                <p class="login-text">Login</p>
+            </div>
+
+
         </div>
+
+
+
     </header>
+
+
+    <div id="app" style="height:3000px;">
+        <div class="side-menu">
+            <ul class="pages">
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-rocket"></i>Top IMDB</a></li>
+                <li><a href="#"><i class="fa-solid fa-film"></i>Movies</a></li>
+                <li><a href="#"><i class="fa-solid fa-tv"></i>TV Shows</a></li>
+                <li><a href="#"><i class="fa-brands fa-android"></i>Android App</a></li>
+            </ul>
+        </div>
+        <div class="body">
+        </div>
+    </div>
+
+    
+<script type="text/javascript">
+    function toggler() {
+        var red = document.querySelector(".side-menu");
+        console.log(red);
+        red.classList.toggle("hidden");
+    }
+</script>
 </body>
+
+
+
+
+
+
+
 
 </html>
