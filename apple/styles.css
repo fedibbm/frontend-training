@@ -1,0 +1,19 @@
+body{
+    background:black;
+}
+.nav{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav .menu li a {
+    color:hsl(240, 11%, 96%);
+    font-weight:200;
+}
+
+.second .menu {
+    align-self:flex-end;
+}
+
+.second .brand {
+    align-self:flex-start;
+}
